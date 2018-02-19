@@ -50,7 +50,7 @@ a, a.email {
 
 @font-face {
 	font-family: "Outage";
-	src: url("Outage.ttf") format("truetype");
+	src: url("Outage.ttf") format("truetype"), url("Outage.eot");
 }
 
 #signupbutton {
