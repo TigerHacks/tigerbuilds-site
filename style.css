@@ -26,6 +26,7 @@ body {
 	top: 50%;
 	position: absolute;
 	min-width: 28.5rem;
+	border-radius: 4px;
 }
 
 .logo {
@@ -50,7 +51,7 @@ a, a.email {
 
 @font-face {
 	font-family: "Outage";
-	src: url("Outage.ttf") format("truetype");
+	src: url("Outage.ttf") format("truetype"), url("Outage.eot");
 }
 
 #signupbutton {
@@ -72,6 +73,11 @@ h2 {
 
 .black {
 	background-color: #333132!important
+}
+
+.blacklink {
+	color: #333132!important;
+	text-decoration: underline;
 }
 
 .bottom {
