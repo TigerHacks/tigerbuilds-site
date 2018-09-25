@@ -5,8 +5,22 @@ body {
 	background-color: #FEF8E2;
 }
 
-.spacing {
-	max-height: 1px;
+.underline {
+	width: 50%;
+	background-color: #f89939;
+	border: none;
+	height: 5px;
+}
+
+.list {
+  list-style: none;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.list .sameline {
+	display: inline-block;
 }
 
 #register{
