@@ -65,6 +65,11 @@ body {
 	-moz-osx-font-smoothing:grayscale;
 }
 
+#registerTT{
+	background-color:#f89939;
+
+}
+
 #volunteer {
 	display:inline-block;
 	text-decoration:none;
@@ -108,23 +113,34 @@ body {
 
 .sponsor {
     padding: 20px 110px 0px 110px ;
+    white-space: nowrap;
+
+    text-align: center; margin: 1em 0;
+}
+
+.sponsor img {
+	vertical-align: middle;
 }
 
 .gold img{
-max-width: 70%;
+/*max-width: 70%;
     max-height:70%;
-	width: auto;}
+*/	width: auto;
+margin: auto;}
 
 .silver img{
-max-width: 50%;
+/*max-width: 50%;
     max-height:50%;
-	width: auto;}
+*/	width: auto;
+margin: auto;}
 
 .bronze img{
-max-width: 30%;
-    max-height:30%;
+/*max-width: 30%;
+    max-height:30%;*/
 	width: auto;
-	/*padding: 20px 200px 0px 200px !important;*/
+	margin: auto;
+	/*padding: 20px 200px 0px 200px !important;
+}*/
 }
 
 .tl .timeline{
