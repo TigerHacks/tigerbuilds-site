@@ -126,19 +126,19 @@ body {
 max-width: 220%;
     max-height:220%;
 	width: auto;
-margin: auto;}
+}
 
 .silver img{
 max-width: 180%;
     max-height:180%;
 	width: auto;
-margin: auto;}
+}
 
 .bronze img{
 max-width: 120%;
     max-height:120%;
 	width: auto;
-	margin: auto;
+
 	/*padding: 20px 200px 0px 200px !important;
 }*/
 }
