@@ -21,6 +21,11 @@ body {
 
 .list .sameline {
 	display: inline-block;
+
+}
+
+.list li {
+	padding-bottom: 12px;
 }
 
 #register{
@@ -126,19 +131,19 @@ body {
 max-width: 220%;
     max-height:220%;
 	width: auto;
-}
+margin: auto;}
 
 .silver img{
 max-width: 180%;
     max-height:180%;
 	width: auto;
-}
+margin: auto;}
 
 .bronze img{
 max-width: 120%;
     max-height:120%;
 	width: auto;
-
+	margin: auto;
 	/*padding: 20px 200px 0px 200px !important;
 }*/
 }
@@ -547,8 +552,25 @@ p.major {
 	margin-top: 1rem;
 }
 
-.bronze {
+.bronzeS {
 	width: 90%;
+}
+
+.gold {
+	color: #FFD700 !important;
+	text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000 !important;
+}
+
+.silver {
+	color: #c0c0c0 !important;
+	text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000 !important;
+
+}
+
+.bronze {
+	color: #cd7f32 !important;
+	text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000 !important;
+
 }
 
 .in-kind {
