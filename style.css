@@ -12,6 +12,30 @@ body {
 	height: 5px;
 }
 
+.brand-logo {
+	color: #FEF8E2 !important;
+	text-shadow:-1.42px -1.42px 0 #000,1.42px -1.42px 0 #000,-1.42px 1.42px 0 #000,1.42px 1.42px 0 #000 !important;
+	padding-left: 20px !important;
+}
+
+#app {
+	padding-bottom: 10px;
+}
+
+#app .col {
+	padding: 6px;
+}
+
+#nav-mobile {
+	padding-right: 162px;
+}
+
+.scroll {
+	color: #FEF8E2 !important;
+	text-shadow:-1.42px -1.42px 0 #000,1.42px -1.42px 0 #000,-1.42px 1.42px 0 #000,1.42px 1.42px 0 #000 !important;
+	padding-left: 20px !important;
+}
+
 .list {
   list-style: none;
   white-space: nowrap;
@@ -55,10 +79,10 @@ body {
 	color:white;
 	cursor:pointer;
 	font-size:23px;
-	line-height:57.5px;
+	line-height:57.3px;
 	text-align:center;
 	margin:0;
-	height:57.5px;
+	height:57.3px;
 	padding:3px 38px 0px 38px;
 	border-radius:25px;
 	max-width:100%;
@@ -466,6 +490,11 @@ h1 {
 	background-color: #333132;
 	color: #FEF8E2;
 	padding: 30px;
+}
+
+.border {
+	text-shadow:-.3px -.3px 0 #000,.3px -.3px 0 #000,-.3px .3px 0 #000,.3px .3px 0 #000 !important;
+
 }
 
 p {
