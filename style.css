@@ -585,18 +585,21 @@ p.major {
 	width: 90%;
 }
 
-.gold {
+li .gold {
+	display: none;
 	color: #FFD700 !important;
 	text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000 !important;
 }
 
-.silver {
+li .silver {
+	display: none;
 	color: #c0c0c0 !important;
 	text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000 !important;
 
 }
 
-.bronze {
+li .bronze {
+	display: none;
 	color: #cd7f32 !important;
 	text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000 !important;
 
