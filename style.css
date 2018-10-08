@@ -632,3 +632,12 @@ li .bronze {
 .fa-chevron-up {
 	color :#FEF8E2;
 }
+
+.map {
+	width: 60%;
+	height: 60%;
+}
+
+.mapwrapper {
+	padding-bottom: 35px !important;
+}
