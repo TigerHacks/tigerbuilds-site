@@ -586,20 +586,20 @@ p.major {
 }
 
 li .gold {
-	display: none;
+	
 	color: #FFD700 !important;
 	text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000 !important;
 }
 
 li .silver {
-	display: none;
+
 	color: #c0c0c0 !important;
 	text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000 !important;
 
 }
 
 li .bronze {
-	display: none;
+
 	color: #cd7f32 !important;
 	text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000 !important;
 
