@@ -586,20 +586,20 @@ p.major {
 }
 
 li .gold {
-	
+	display: inline; padding: 8px;
 	color: #FFD700 !important;
 	text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000 !important;
 }
 
 li .silver {
-
+display: inline; padding: 8px;
 	color: #c0c0c0 !important;
 	text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000 !important;
 
 }
 
 li .bronze {
-
+display: inline; padding: 8px;
 	color: #cd7f32 !important;
 	text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000 !important;
 
@@ -640,4 +640,11 @@ li .bronze {
 
 .mapwrapper {
 	padding-bottom: 35px !important;
+}
+.social {
+	padding: 10px;
+}
+
+.winner {
+	text-decoration: underline;
 }
