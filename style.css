@@ -558,7 +558,16 @@ p.major {
 
 .row {
 	margin-bottom: 1rem;
+
 }
+
+.row > p {
+	max-width: 600px;
+	text-align: center;
+	margin: auto;
+}
+
+
 
 #sponsorinfo > .row .col {
 	padding: 1rem 0;
@@ -647,4 +656,15 @@ display: inline; padding: 8px;
 
 .winner {
 	text-decoration: underline;
+}
+
+#registration-button {
+	background: #F89939;
+	margin: 30px calc(50% - 100px);
+	width: 200px;
+	height: 50px;
+}
+
+#registration-button:hover {
+	background: #E99139;
 }
