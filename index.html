@@ -84,7 +84,7 @@
 			/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 			   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 			</style>
-			<div id="mc_embed_signup" class="sub">
+			<div id="mc_embed_signup" class="sub" style="margin: auto !important">
 			<form action="https://gmail.us20.list-manage.com/subscribe/post?u=6a5fd61cc9ae159accc57b421&amp;id=e438899228" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate singular-form" target="_blank" novalidate>
 			    
 				<button class="shown" type="button" id="trigger">Subscribe</button>
@@ -114,12 +114,12 @@
 			<script type="text/javascript">
 				const sf = {};
 
-				sf.container = document.querySelector('.container');
-				sf.form = document.querySelector('.container > .singular-form');
-				sf.trigger = document.querySelector('.container > .singular-form > button#trigger');
-				sf.input = document.querySelector('.container>.singular-form>.input-container>input');
-				sf.submitButton = document.querySelector('.container > .singular-form > .input-container > button');
-				sf.successMessage = document.querySelector('.container > .singular-form > #success');
+				sf.sub = document.querySelector('.sub');
+				sf.form = document.querySelector('.sub > .singular-form');
+				sf.trigger = document.querySelector('.sub > .singular-form > button#trigger');
+				sf.input = document.querySelector('.sub>.singular-form>.input-container>input');
+				sf.submitButton = document.querySelector('.sub > .singular-form > .input-container > button');
+				sf.successMessage = document.querySelector('.sub > .singular-form > #success');
 
 				sf.submitDelay = 1500;
 
@@ -127,7 +127,7 @@
 				    switch (e.target) {
 				        case sf.trigger:
 				            console.log('case trigger');
-				            sf.container.style.width = '37rem'
+				            sf.sub.style.width = '37rem'
 				            e.target.classList.remove('shown');
 				            sf.input.classList.add('shown');
 				            sf.submitButton.classList.add('shown');
@@ -151,8 +151,8 @@
 				    sf.submitButton.style.transition = 'all .4s ease';
 				    sf.input.classList.remove('shown');
 				    sf.submitButton.classList.remove('shown');
-				    sf.container.style.transition = 'all .4s cubic-bezier(0.47, 0.47, 0.27, 1.20) .4s';
-				    sf.container.style.width = '';
+				    sf.sub.style.transition = 'all .4s cubic-bezier(0.47, 0.47, 0.27, 1.20) .4s';
+				    sf.sub.style.width = '';
 				    sf.successMessage.classList.add('shown');
 				    let submission = setTimeout(() => sf.form.submit(), sf.submitDelay);
 				}
