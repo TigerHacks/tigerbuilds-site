@@ -677,15 +677,14 @@ display: inline; padding: 8px;
     --accent-color: #f89939;
 }
 
-body,
 .singular-form button,
-.container>.singular-form>.input-container>input {
+.sub>.singular-form>.input-container>input {
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
-.container {
+.sub {
     width: 19rem;
     height: 5rem;
     padding: 10px;
@@ -696,14 +695,14 @@ body,
     transition: width .4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-.container>.singular-form {
+.sub>.singular-form {
     position: relative;
     width: 100%;
     height: 100%;
     background-color: --main-color;
 }
 
-.container>.singular-form button {
+.sub>.singular-form button {
     width: 9rem;
     padding: 0;
     border: none;
@@ -712,7 +711,7 @@ body,
     cursor: pointer;
 }
 
-.container>.singular-form>button#trigger {
+.sub>.singular-form>button#trigger {
     padding: 0;
     width: 100%;
     color: var(--accent-color);
@@ -720,11 +719,11 @@ body,
     z-index: 3;
 }
 
-.container>.singular-form>.input-container {
+.sub>.singular-form>.input-container {
     z-index: 2;
 }
 
-.container>.singular-form>.input-container>input {
+.sub>.singular-form>.input-container>input {
     display: inline-block;
     height: 100%;
     width: 100%;
@@ -738,7 +737,7 @@ body,
     transition: all .4s ease .4s;
 }
 
-.container>.singular-form>.input-container>button {
+.sub>.singular-form>.input-container>button {
     position: absolute;
     top: 0;
     right: 0;
@@ -750,7 +749,7 @@ body,
     transition: all .4s ease .4s;
 }
 
-.container>.singular-form>#success {
+.sub>.singular-form>#success {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -759,9 +758,9 @@ body,
     z-index: 1;
 }
 
-.container>.singular-form>button#trigger,
-.container>.singular-form>.input-container,
-.container>.singular-form>#success {
+.sub>.singular-form>button#trigger,
+.sub>.singular-form>.input-container,
+.sub>.singular-form>#success {
     position: absolute;
     top: 0;
     right: 0;
@@ -771,25 +770,25 @@ body,
     opacity: 0;
 }
 
-.container>.singular-form>button#trigger {
+.sub>.singular-form>button#trigger {
     transition: all .4s ease;
 }
 
-.container>.singular-form>.input-container {
+.sub>.singular-form>.input-container {
     transform: scale(1);
     opacity: 1;
     transition: all .4s ease .4s;
 }
 
-.container>.singular-form>#success {
+.sub>.singular-form>#success {
     transition: all .2s ease .4s;
 }
 
-.container>.singular-form>button#trigger.shown,
-.container>.singular-form>.input-container.shown,
-.container>.singular-form>#success.shown,
-.container>.singular-form>.input-container>button.shown,
-.container>.singular-form>.input-container>input.shown {
+.sub>.singular-form>button#trigger.shown,
+.sub>.singular-form>.input-container.shown,
+.sub>.singular-form>#success.shown,
+.sub>.singular-form>.input-container>button.shown,
+.sub>.singular-form>.input-container>input.shown {
     transform: scale(1);
     opacity: 1;
 }
