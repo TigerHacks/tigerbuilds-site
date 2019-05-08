@@ -84,81 +84,53 @@
 			/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 			   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 			</style>
-			<div id="mc_embed_signup" class="container">
-			<form action="https://gmail.us20.list-manage.com/subscribe/post?u=6a5fd61cc9ae159accc57b421&amp;id=e438899228" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate singular-form" target="_blank" novalidate>
-			    
-				<button class="shown" type="button" id="trigger">Notify me</button>
-
-				<div id="mc_embed_signup_scroll" class="input-container">
-	                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" required placeholder="E-mail">
-	                <button type="button">Send</button>
-
-					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6a5fd61cc9ae159accc57b421_e438899228" tabindex="-1" value=""></div>
-				    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-
-	            </div>
-
-	            <div id="success">Thank you!</div>
-
-				<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-				<!-- <div id="mc_embed_signup_scroll">
-					<label for="mce-EMAIL">Subscribe</label>
-					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+			<div id="mc_embed_signup" class="sub">
+				<form action="https://gmail.us20.list-manage.com/subscribe/post?u=6a5fd61cc9ae159accc57b421&amp;id=e438899228" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 				    
-				    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6a5fd61cc9ae159accc57b421_e438899228" tabindex="-1" value=""></div>
-				    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-			    </div> -->
-			</form>
+
+					<input type="email" id="email"/>
+					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6a5fd61cc9ae159accc57b421_e438899228" tabindex="-1" value=""></div>
+					<label for="email">Email address</label>
+					<button id="button">Subscribe</button>
+
+
+
+					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					<!-- <div id="mc_embed_signup_scroll">
+						<label for="mce-EMAIL">Subscribe</label>
+						<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+					    
+					    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6a5fd61cc9ae159accc57b421_e438899228" tabindex="-1" value=""></div>
+					    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+				    </div> -->
+				</form>
 			</div>
 
 			<script type="text/javascript">
-				const sf = {};
+				var email = document.getElementById('email'),
+				    button = document.getElementById('button');
 
-				sf.container = document.querySelector('.container');
-				sf.form = document.querySelector('.container > .singular-form');
-				sf.trigger = document.querySelector('.container > .singular-form > button#trigger');
-				sf.input = document.querySelector('.container>.singular-form>.input-container>input');
-				sf.submitButton = document.querySelector('.container > .singular-form > .input-container > button');
-				sf.successMessage = document.querySelector('.container > .singular-form > #success');
-
-				sf.submitDelay = 1500;
-
-				sf.clickHandler = (e) => {
-				    switch (e.target) {
-				        case sf.trigger:
-				            console.log('case trigger');
-				            sf.container.style.width = '37rem'
-				            e.target.classList.remove('shown');
-				            sf.input.classList.add('shown');
-				            sf.submitButton.classList.add('shown');
-				            sf.input.focus();
-				            break;
-				        case sf.submitButton:
-				            sf.submitForm();
-				            break;
-				    }
+				function validateEmail(email) {
+				    var ex = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+				    return ex.test(email);
 				}
 
-				sf.handleInputKeypress = (e) => {
-				    if (e.keyCode === 13) {
-				        e.preventDefault();
-				        sf.submitForm();
-				    }
-				}
+				email.addEventListener('keydown', function() {
+				  var email = this.value;
+				  
+				  if(validateEmail(email)) {
+				    button.classList.add('is-active');
+				  }
+				});
 
-				sf.submitForm = () => {
-				    sf.input.style.transition = 'all .4s ease';
-				    sf.submitButton.style.transition = 'all .4s ease';
-				    sf.input.classList.remove('shown');
-				    sf.submitButton.classList.remove('shown');
-				    sf.container.style.transition = 'all .4s cubic-bezier(0.47, 0.47, 0.27, 1.20) .4s';
-				    sf.container.style.width = '';
-				    sf.successMessage.classList.add('shown');
-				    let submission = setTimeout(() => sf.form.submit(), sf.submitDelay);
-				}
-
-				sf.input.addEventListener('keypress', (e) => sf.handleInputKeypress(e));
-				document.addEventListener('click', (e) => sf.clickHandler(e));
+				button.addEventListener('click', function(e){
+				  e.preventDefault();
+				  this.classList.add('is-done','is-active');
+				  
+				  setTimeout(function(){ 
+				    button.innerHTML = "Thanks! Check Your Email."
+				  }, 500);
+				});
 			</script>
 
 			<!--End mc_embed_signup-->
