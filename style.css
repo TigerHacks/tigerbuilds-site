@@ -658,20 +658,6 @@ display: inline; padding: 8px;
 	text-decoration: underline;
 }
 
-#registration-button {
-	background: #F89939;
-	margin: 30px calc(50% - 150px);
-	width: 300px;
-	height: 100px;
-	border-radius: 10px;
-}
-
-#registration-button:hover {
-	background: #E99139;
-}
-
-
-
 :root {
     --main-color: #FEF8E2;
     --accent-color: #f89939;
